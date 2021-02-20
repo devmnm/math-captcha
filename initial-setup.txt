@@ -1,0 +1,12 @@
+
+npm init -y
+npm --save-dev rollup
+npm --save-dev rollup-plugin-terser
+npm --save-dev eslint
+
+npx eslint --init
+>> syntax + check problems
+>> JS modules
+>> No react or else
+>> Browser
+>> JSON

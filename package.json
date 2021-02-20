@@ -1,0 +1,27 @@
+{
+  "name": "math-captcha",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "eslint": "eslint src --fix",
+    "build": "eslint src --fix && rollup -c",
+    "build-dev": "eslint src --fix && rollup -c rollup-dev.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devmnm/math-captcha.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/devmnm/math-captcha/issues"
+  },
+  "homepage": "https://github.com/devmnm/math-captcha#readme",
+  "devDependencies": {
+    "eslint": "^7.20.0",
+    "rollup": "^2.39.0",
+    "rollup-plugin-terser": "^7.0.2"
+  }
+}
