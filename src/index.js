@@ -1,4 +1,3 @@
-// import createNumberFields from './create-number-fields'
 import config from './config'
 import generateNumber from './generate-number'
 import calculate from './operations'
@@ -17,12 +16,10 @@ theForm.addEventListener('submit', function(e){
     // e.preventDefault()
     if(isFormInvalid.call(theForm, result)){
         e.preventDefault()
+        alert('Invalid')
         return false
     }else{
         return true
     }
 
 })
-
-// const answerDropdownElem = createNumberFields(config.min, result)
-// config.resultElem.appendChild(answerDropdownElem)

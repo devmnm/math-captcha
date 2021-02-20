@@ -1,6 +1,10 @@
 
 import numberWordEnum from './number-words-enum'
 
+/**
+ * 
+ * @param {*} num 
+ */
 export default function getNumberWord(num){
     if(num > 100){
         console.warn('Not supporting numbers greater than 100')

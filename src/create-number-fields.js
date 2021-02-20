@@ -1,4 +1,9 @@
 
+/**
+ * 
+ * @param {*} minNum 
+ * @param {*} maxNum 
+ */
 export default function createNumberFields(minNum, maxNum){
     const max = maxNum * 2 // produce more possible 'solutions'
     const selectElem = document.createElement('select')

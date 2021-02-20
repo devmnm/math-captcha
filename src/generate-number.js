@@ -1,4 +1,9 @@
 
+/**
+ * 
+ * @param {*} min 
+ * @param {*} max 
+ */
 export default function generateNumber(min, max){
     //
     /// Sanity checks

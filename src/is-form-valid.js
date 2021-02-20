@@ -1,4 +1,8 @@
 
+/**
+ * 
+ * @param {*} captchaVal 
+ */
 export default function isFormInvalid(captchaVal){
     let why = ''
     const theForm = this
@@ -23,6 +27,6 @@ function isEmpty(val){
 }
 
 function isCaptchaInvalid(input, answer){
-    alert(input + ',' + answer)
+    // alert(input + ',' + answer)
     return parseFloat(input) === parseFloat(answer)
 }

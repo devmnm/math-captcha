@@ -1,4 +1,7 @@
 
+/**
+ * 
+ */
 const numberWordEnum = {
     0: 'Zero',
     1: 'One',
