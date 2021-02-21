@@ -9,15 +9,15 @@ const operand2 = generateNumber(config.min, config.max)
 const operator = '+'
 
 if (config.userNumberWords) {
-  config.operationElem.innerHTML = getNumberWord(operand1) + ' ' + operator + ' ' + getNumberWord(operand2)
+  config.operationElem.innerText = getNumberWord(operand1) + ' ' + operator + ' ' + getNumberWord(operand2)
 } else {
-  config.operationElem.innerHTML = operand1 + ' ' + operator + ' ' + operand2
+  config.operationElem.innerText = operand1 + ' ' + operator + ' ' + operand2
 }
+config.answerTextElem.setCustomValidity('Invalid value') // invalid as default
 
 const result = calculate[operator](operand1, operand2)
-// console.log(result)
+console.log(result)
 
-config.answerTextElem.setCustomValidity('Invalid value') // invalid as default
 config.answerTextElem.addEventListener('blur', function (e) {
   if (config.answerTextElem.value === result.toString()) {
     config.answerTextElem.setCustomValidity('') // valid
