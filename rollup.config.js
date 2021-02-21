@@ -1,5 +1,4 @@
 import { terser } from 'rollup-plugin-terser'
-// import css from 'rollup-plugin-import-css'
 
 export default [
     {
@@ -11,8 +10,7 @@ export default [
             name: 'Captcha'
         },
         plugins:[
-            terser(),
-            // css({ ouput: 'captcha.min.css', minify: true })
+            terser()
         ]
     }
 ]
